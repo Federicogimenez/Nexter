@@ -1,0 +1,47 @@
+.footer{
+    background-color: $color-secondary;
+    grid-column: full-start / full-end;
+    padding: 8rem;
+
+    &__ul{
+        list-style: none;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        gap: 2rem;
+        align-items: center;
+
+    }
+    &__link{
+        position: relative;
+        
+        &,
+        &:link,
+        &:visited{
+            display: block;
+            color: #fff;
+            background-color: rgba($color-secondary, .05);
+            font-size: 1.4rem;
+            font-family: $font-display;
+            font-weight: 300;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 1.5rem;
+            transition: all .2s;
+        }
+        &:hover{
+            background-color: rgba(#2d4f77, .4);
+            border-radius: .5rem;
+            transform: scale(1.1);
+        }
+    }
+    &__copyright{
+        font-size: 1.4rem;
+        color: $color-grey-dark-2;
+        width: 70%;
+        margin-top: 5rem;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }   
+}
